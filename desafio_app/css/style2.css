@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+  }
+  body{
+    background-image: url("/desafio_app/imgs/image.png");
+  }
+.conteudo2{
+    margin: 50px 40px;
+}
+p{
+    display: inline-block;
+}
+h1{
+    display: inline-block;
+    float: right;
+}

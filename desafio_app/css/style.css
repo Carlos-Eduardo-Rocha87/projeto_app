@@ -3,6 +3,8 @@
   margin: 0px;
   padding: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
 }
 
 body {
@@ -11,7 +13,8 @@ body {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   background-blend-mode: darken;
-    background-size: cover;
+  width: 100%;
+  background-size: cover;
 }
 .parent {
     position: relative; 
@@ -29,19 +32,30 @@ body {
   
 header {
     padding: 10px 0px;
-    width: 100vw;
+    width: 100%;
+    margin: auto;
     background-color: #475569;
-    height: 64px;
+    height: 64px; 
+    background-color: #334155;
 }
-nav{
+.pesquisa{
     height: 35px;
     margin: auto;
     border-radius: 5px;
     padding: 5px;
-    width: 360px;
-    background-color: #334155;
+    width: min-content;
     border: 1px solid rgba(0, 0, 0, 0.199);
     display: flex;
+}
+.user{
+    background-color: white;
+    width: 32px;
+    height: 32px; 
+    border-radius: 50%;
+    margin-left: 50px;
+    float: left;
+    display: inline;
+    margin-top: 10px;
 }
 label{
     margin-top: 0%;
@@ -52,26 +66,32 @@ label{
     width: 35px;
     height: 35px;
 }
-nav>input{
+.pesquisa>input{
     background-color: transparent;
     border: none;
     margin-left: 15px;
     height: 35px;
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
     width: 300px;
+    color: white;
+    font-size: 20px;
 }
 input::placeholder {
-    color: white;
+    color: rgb(177, 177, 177);
     font-size: 18px;
 }
 .conteudo {
   width: 100%;
+  margin: auto;
   margin-top: 100px;  
   margin-bottom: 100px;
 }
 
 .container{
-    width: 200px;
-    margin: 40px 80px -5px 80px;
+    width: min-content;
+    margin:20px 20px;
 }
 
 .informacao{
@@ -88,8 +108,8 @@ input::placeholder {
     margin-top: 20px;
 }
 .imgprj {
-    width: 260px;
-    height: 171px;
+    width: max-content;
+    height: max-content;
     border-radius: 5px;
 }
 .estado{
@@ -119,8 +139,7 @@ input::placeholder {
 }
 table{
     margin: auto;
-    width: 80%;
-    padding: 0px 100px;
+    width: 70%;
     
 }
 .foot{
@@ -132,3 +151,43 @@ table{
     text-align: center;
 
 }
+
+@media only screen and (max-width: 1200px) {
+    table{
+        margin: auto;
+        padding: auto;
+    }
+    tr{
+        width: min-content;
+        margin: auto;
+        padding: 0px;
+    }
+    td{
+        float: none;
+        display: inline-block;
+        margin: auto;
+    }
+    .user{
+        margin-right: -10px;
+    }
+    
+  }
+  @media only screen and (max-width: 900px) {
+    table{
+        margin: auto;
+        padding: auto;
+    }
+    tr{
+        width: min-content;
+        margin: auto;
+        padding: 0px;
+    }
+    td{
+        float: none;
+        display: inline-block;
+        margin: auto;
+    }
+    .user{
+        display: none;
+    }
+  }
