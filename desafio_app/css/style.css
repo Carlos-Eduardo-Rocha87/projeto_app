@@ -9,7 +9,7 @@
 
 body {
   height: 100%;  
-  background: black url("/imgs/image.png") center center no-repeat fixed ;
+  background: black url("/desafio_app/imgs/imagebackgroud.png") center center no-repeat fixed ;
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   background-blend-mode: darken;

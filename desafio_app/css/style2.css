@@ -5,16 +5,150 @@
     text-decoration: none;
     color: white;
   }
-  body{
-    background-image: url("/desafio_app/imgs/image.png");
-  }
+  
+    body {
+        height: 100%;  
+        background: black url("/desafio_app/imgs/imagebackgroud.png") center center no-repeat fixed ;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        background-blend-mode: darken;
+        width: 100%;
+        background-size: cover;
+      }
+      header {
+        padding: 10px 0px;
+        width: 100%;
+        margin: auto;
+        background-color: #475569;
+        height: 64px; 
+        background-color: #334155;
+    }
+    .pesquisa{
+        height: 35px;
+        margin: auto;
+        border-radius: 5px;
+        padding: 5px;
+        width: min-content;
+        border: 1px solid rgba(0, 0, 0, 0.199);
+        display: flex;
+    }
+    .user{
+        background-color: white;
+        width: 32px;
+        height: 32px; 
+        border-radius: 50%;
+        margin-left: 50px;
+        float: left;
+        display: inline;
+        margin-top: 10px;
+    }
+    label{
+        margin-top: 0%;
+        color: white;
+    }
+    
+    .imgpesquisa{
+        width: 35px;
+        height: 35px;
+    }
+    .pesquisa>input{
+        background-color: transparent;
+        border: none;
+        margin-left: 15px;
+        height: 35px;
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+        width: 300px;
+        color: white;
+        font-size: 20px;
+    }
+    input::placeholder {
+        color: rgb(177, 177, 177);
+        font-size: 18px;
+    }
 .conteudo2{
-    margin: 50px 40px;
+    margin: 47px 40px;
 }
-p{
+
+.titulo{
     display: inline-block;
+    margin: 0;
 }
-h1{
+.imgprjt{
+    width: 38vw;
+    height: 38vw;
+}
+ h1{
     display: inline-block;
+    font-size: 50px;
+    width: 900px;
     float: right;
+    height: 40px;
+    margin: 0;
+    margin-left: 50px;
 }
+h1>.estadoavariado{
+    display: flex;
+    font-size: 16px;
+    background-color: #F87171;
+    width: 90px;
+    border-radius: 7px;
+    height: 16px;
+    margin-top: 18px ;
+    margin-bottom: 20px;
+    padding: 5px;
+    vertical-align: auto;
+}
+h1 > hr{
+    width: 750px;
+}
+h1>.imgbandeira{
+    display: inline-block;
+    margin-bottom: 50px;
+}
+h1>.descricao{
+    font-size: 16px;
+    margin-top: 30px;
+    width: 750px;
+    margin-bottom: 20px;
+    font-weight: 100;
+}
+h1> ul,li{
+    list-style: georgian inside url('/desafio_app/imgs/image.png');
+    font-size: 16px;
+    font-weight: 100;
+    vertical-align: sub;
+    margin: 10px 0px;
+}
+h1>.inputs{
+    font-size: 50px;
+    font-weight: 100;
+    margin-left: 2px;
+}
+.inputs>input{
+    background-color: transparent;
+    border: none;
+    border: 0 none;
+    outline: 0;
+    height: 90px;
+    width: 500px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: white;
+}
+input::placeholder {
+    color: rgb(177, 177, 177);
+    font-size: 30px;
+}
+.foot{
+    width: 100%;
+    height: 24px;
+    background-color: #475569;
+    
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+
